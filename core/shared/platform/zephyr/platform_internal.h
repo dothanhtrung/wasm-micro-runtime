@@ -44,7 +44,7 @@
 #include <net/net_context.h>
 
 #ifdef CONFIG_ARM_MPU
-#include <arch/arm/aarch32/cortex_m/cmsis.h>
+#include <cmsis_core.h>
 #endif
 #else /* else of KERNEL_VERSION_NUMBER < 0x030200 */
 #include <zephyr/net/net_pkt.h>
@@ -54,7 +54,7 @@
 #include <zephyr/net/net_context.h>
 
 #ifdef CONFIG_ARM_MPU
-#include <zephyr/arch/arm/aarch32/cortex_m/cmsis.h>
+#include <cmsis_core.h>
 #endif
 #endif /* end of KERNEL_VERSION_NUMBER < 0x030200 */
 
